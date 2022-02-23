@@ -27,7 +27,7 @@
             <pubDate>Thu, 24 Feb 2022 06:12:45 +0800</pubDate>
             <description><![CDATA[ &lt;h2 id=&#34;对于-gpu-next-的简介&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#对于-gpu-next-的简介&#34;&gt;#&lt;/a&gt; 对于 gpu-next 的简介&lt;/h2&gt;
 &lt;p&gt;总体上  &lt;code&gt;vo=gpu-next&lt;/code&gt;  是  &lt;code&gt;vo=gpu&lt;/code&gt;  的预览版本一样东西，最大的亮点是对 Dolby Vision 的部分支持，并且因为重构了许多关键算法性能表现会更好，具体的差异参见项目主页 WIki 上的 &lt;a href=&#34;https://github.com/mpv-player/mpv/wiki/GPU-Next-vs-GPU&#34;&gt;GPU Next vs GPU&lt;br /&gt;
-&lt;/a&gt; 页面&lt;/p&gt;
+&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&#34;安装具有-libplacebo-v4-支持的-libplacebo&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#安装具有-libplacebo-v4-支持的-libplacebo&#34;&gt;#&lt;/a&gt; 安装具有 libplacebo-v4 支持的 libplacebo&lt;/h2&gt;
 &lt;p&gt;首先先安装 AUR 上的  &lt;code&gt;libplacebo-git&lt;/code&gt; ，因为使用  &lt;code&gt;vo=gpu-next&lt;/code&gt;  需要具有  &lt;code&gt;libplacebo-v4&lt;/code&gt;  支持的  &lt;code&gt;libplacebo&lt;/code&gt; ，但官方仓库里的  &lt;code&gt;libplacebo&lt;/code&gt;  预编译包虽然版本号符合要求但似乎没有  &lt;code&gt;libplacebo-v4&lt;/code&gt;  支持，因此如果直接安装  &lt;code&gt;mpv-git&lt;/code&gt;  是无法使用  &lt;code&gt;vo=gpu-next&lt;/code&gt;  的&lt;/p&gt;
 &lt;p&gt;在此之前得安装 AUR 上的  &lt;code&gt;ffmpeg-vulkan&lt;/code&gt;  或 ArchLinuxCN 源的预编译包&lt;/p&gt;
