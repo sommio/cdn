@@ -1,14 +1,14 @@
 <?xml version="1.0"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>https://sommio.me</id>
+    <id>https://sommio.moe</id>
     <title>sommioのblog</title>
     <subtitle></subtitle>
-    <icon>https://sommio.me/images/favicon.svg</icon>
-    <link href="https://sommio.me" />
+    <icon>https://sommio.moe/images/favicon.svg</icon>
+    <link href="https://sommio.moe" />
     <author>
       <name>sommio</name>
     </author>
-    <updated>2022-02-23T22:12:45.000Z</updated>
+    <updated>2022-02-24T03:09:31.000Z</updated>
     <category term="sommio" />
     <category term=" sommioのblog" />
     <category term=" sommio的博客" />
@@ -16,9 +16,24 @@
     <category term=" sommio blog" />
     <category term=" sommio&#39;s blog" />
     <entry>
-        <id>https://sommio.me/2022/02/24/%E5%9C%A8ArchLinux%E4%B8%8A%E5%AE%89%E8%A3%85%E5%85%B7%E6%9C%89vo=gpu-next%E6%94%AF%E6%8C%81%E7%9A%84mpv/</id>
+        <id>https://sommio.moe/2022/02/24/waifu2x-caffe/</id>
+        <title>Waifu2x-Caffe CLI 版本参数简介</title>
+        <link rel="alternate" href="https://sommio.moe/2022/02/24/waifu2x-caffe/"/>
+        <content type="html">&lt;h3 id=&#34;-l-input_extention_list&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#-l-input_extention_list&#34;&gt;#&lt;/a&gt; -l , --input_extention_list&lt;/h3&gt;
+&lt;p&gt;指定文件或文件夹&lt;/p&gt;
+&lt;h3 id=&#34;-t-tta-01&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#-t-tta-01&#34;&gt;#&lt;/a&gt; -t --tta &amp;lt;0|1&amp;gt;&lt;/h3&gt;
+&lt;p&gt;默认为 0 ，当为 1 时启用 TTA（测试时数据增强），速度慢八倍但质量更好&lt;/p&gt;
+&lt;h3 id=&#34;-gpu&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#-gpu&#34;&gt;#&lt;/a&gt; --gpu&lt;/h3&gt;
+&lt;p&gt;gpu 设备号，猜测是 xrandr --listproviders 输出中的 Provider&lt;/p&gt;
+&lt;h3 id=&#34;-b-batch_size&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#-b-batch_size&#34;&gt;#&lt;/a&gt; -b  --batch_size&lt;/h3&gt;
+&lt;p&gt;似乎是机器学习相关的概念，看不懂所以不管（&lt;/p&gt;
+</content>
+        <updated>2022-02-24T03:09:31.000Z</updated>
+    </entry>
+    <entry>
+        <id>https://sommio.moe/2022/02/24/%E5%9C%A8ArchLinux%E4%B8%8A%E5%AE%89%E8%A3%85%E5%85%B7%E6%9C%89vo=gpu-next%E6%94%AF%E6%8C%81%E7%9A%84mpv/</id>
         <title>在 Arch Linux 上安装具有 vo=gpu-next 支持的 mpv</title>
-        <link rel="alternate" href="https://sommio.me/2022/02/24/%E5%9C%A8ArchLinux%E4%B8%8A%E5%AE%89%E8%A3%85%E5%85%B7%E6%9C%89vo=gpu-next%E6%94%AF%E6%8C%81%E7%9A%84mpv/"/>
+        <link rel="alternate" href="https://sommio.moe/2022/02/24/%E5%9C%A8ArchLinux%E4%B8%8A%E5%AE%89%E8%A3%85%E5%85%B7%E6%9C%89vo=gpu-next%E6%94%AF%E6%8C%81%E7%9A%84mpv/"/>
         <content type="html">&lt;h2 id=&#34;对于-gpu-next-的简介&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#对于-gpu-next-的简介&#34;&gt;#&lt;/a&gt; 对于 gpu-next 的简介&lt;/h2&gt;
 &lt;p&gt;总体上  &lt;code&gt;vo=gpu-next&lt;/code&gt;  是  &lt;code&gt;vo=gpu&lt;/code&gt;  的预览版本一样东西，最大的亮点是对 Dolby Vision 的部分支持，并且因为重构了许多关键算法性能表现会更好，具体的差异见项目主页 WIki 上的 &lt;a href=&#34;https://github.com/mpv-player/mpv/wiki/GPU-Next-vs-GPU&#34;&gt;GPU Next vs GPU&lt;br /&gt;
 &lt;/a&gt;&lt;/p&gt;
@@ -31,8 +46,8 @@
 &lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;yay -S mpv-git&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;装完之后  &lt;code&gt;vo=help&lt;/code&gt;  就可以看到  &lt;code&gt;gpu-next&lt;/code&gt;  了&lt;/p&gt;
 &lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;mpv --vo&lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt;help&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;Available video outputs:&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  libmpv           render API &lt;span class=&#34;token keyword&#34;&gt;for&lt;/span&gt; libmpv&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  gpu              Shader-based GPU Renderer&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  gpu-next         Video output based on libplacebo&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;6&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  vdpau            VDPAU with X11&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;7&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  wlshm            Wayland SHM video output &lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;software scaling&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;8&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  xv               X11/Xv&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;9&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  vaapi            VA API with X11&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;10&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  x11              X11 &lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;software scaling&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;11&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  null             Null video output&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;12&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  image            Write video frames to image files&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;13&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  tct              true-color terminals&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;14&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  caca             libcaca&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;15&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  drm              Direct Rendering Manager &lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;software scaling&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;需要注意，因为安装了  &lt;code&gt;libplacebo-git&lt;/code&gt;  所以直接装 CN 源的预编译包运行时会报错找不到  &lt;code&gt;libplacebo.so.192&lt;/code&gt;&lt;/p&gt;
 &lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;mpv: error &lt;span class=&#34;token keyword&#34;&gt;while&lt;/span&gt; loading shared libraries: libplacebo.so.192: cannot &lt;span class=&#34;token function&#34;&gt;open&lt;/span&gt; shared object file: No such &lt;span class=&#34;token function&#34;&gt;file&lt;/span&gt; or directory&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;</content>
-        <category term="Applications" scheme="https://sommio.me/categories/Applications/" />
-        <category term="mpv" scheme="https://sommio.me/tags/mpv/" />
+        <category term="Applications" scheme="https://sommio.moe/categories/Applications/" />
+        <category term="mpv" scheme="https://sommio.moe/tags/mpv/" />
         <updated>2022-02-23T22:12:45.000Z</updated>
     </entry>
 </feed>

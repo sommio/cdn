@@ -3,15 +3,15 @@
     <channel>
         <title>sommioのblog</title>
         <subtitle></subtitle>
-        <icon>https://sommio.me/images/favicon.svg</icon>
-        <link>https://sommio.me</link>
+        <icon>https://sommio.moe/images/favicon.svg</icon>
+        <link>https://sommio.moe</link>
         <author>
           <name>sommio</name>
         </author>
         <description></description>
         <language>zh-CN</language>
-        <pubDate>Thu, 24 Feb 2022 06:12:45 +0800</pubDate>
-        <lastBuildDate>Thu, 24 Feb 2022 06:12:45 +0800</lastBuildDate>
+        <pubDate>Thu, 24 Feb 2022 11:09:31 +0800</pubDate>
+        <lastBuildDate>Thu, 24 Feb 2022 11:09:31 +0800</lastBuildDate>
         <category term="sommio" />
         <category term=" sommioのblog" />
         <category term=" sommio的博客" />
@@ -19,11 +19,26 @@
         <category term=" sommio blog" />
         <category term=" sommio&#39;s blog" />
         <item>
-            <guid isPermalink="true">https://sommio.me/2022/02/24/%E5%9C%A8ArchLinux%E4%B8%8A%E5%AE%89%E8%A3%85%E5%85%B7%E6%9C%89vo=gpu-next%E6%94%AF%E6%8C%81%E7%9A%84mpv/</guid>
+            <guid isPermalink="true">https://sommio.moe/2022/02/24/waifu2x-caffe/</guid>
+            <title>Waifu2x-Caffe CLI 版本参数简介</title>
+            <link>https://sommio.moe/2022/02/24/waifu2x-caffe/</link>
+            <pubDate>Thu, 24 Feb 2022 11:09:31 +0800</pubDate>
+            <description><![CDATA[ &lt;h3 id=&#34;-l-input_extention_list&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#-l-input_extention_list&#34;&gt;#&lt;/a&gt; -l , --input_extention_list&lt;/h3&gt;
+&lt;p&gt;指定文件或文件夹&lt;/p&gt;
+&lt;h3 id=&#34;-t-tta-01&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#-t-tta-01&#34;&gt;#&lt;/a&gt; -t --tta &amp;lt;0|1&amp;gt;&lt;/h3&gt;
+&lt;p&gt;默认为 0 ，当为 1 时启用 TTA（测试时数据增强），速度慢八倍但质量更好&lt;/p&gt;
+&lt;h3 id=&#34;-gpu&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#-gpu&#34;&gt;#&lt;/a&gt; --gpu&lt;/h3&gt;
+&lt;p&gt;gpu 设备号，猜测是 xrandr --listproviders 输出中的 Provider&lt;/p&gt;
+&lt;h3 id=&#34;-b-batch_size&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#-b-batch_size&#34;&gt;#&lt;/a&gt; -b  --batch_size&lt;/h3&gt;
+&lt;p&gt;似乎是机器学习相关的概念，看不懂所以不管（&lt;/p&gt;
+ ]]></description>
+        </item>
+        <item>
+            <guid isPermalink="true">https://sommio.moe/2022/02/24/%E5%9C%A8ArchLinux%E4%B8%8A%E5%AE%89%E8%A3%85%E5%85%B7%E6%9C%89vo=gpu-next%E6%94%AF%E6%8C%81%E7%9A%84mpv/</guid>
             <title>在 Arch Linux 上安装具有 vo=gpu-next 支持的 mpv</title>
-            <link>https://sommio.me/2022/02/24/%E5%9C%A8ArchLinux%E4%B8%8A%E5%AE%89%E8%A3%85%E5%85%B7%E6%9C%89vo=gpu-next%E6%94%AF%E6%8C%81%E7%9A%84mpv/</link>
-            <category term="Applications" scheme="https://sommio.me/categories/Applications/" />
-            <category term="mpv" scheme="https://sommio.me/tags/mpv/" />
+            <link>https://sommio.moe/2022/02/24/%E5%9C%A8ArchLinux%E4%B8%8A%E5%AE%89%E8%A3%85%E5%85%B7%E6%9C%89vo=gpu-next%E6%94%AF%E6%8C%81%E7%9A%84mpv/</link>
+            <category term="Applications" scheme="https://sommio.moe/categories/Applications/" />
+            <category term="mpv" scheme="https://sommio.moe/tags/mpv/" />
             <pubDate>Thu, 24 Feb 2022 06:12:45 +0800</pubDate>
             <description><![CDATA[ &lt;h2 id=&#34;对于-gpu-next-的简介&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#对于-gpu-next-的简介&#34;&gt;#&lt;/a&gt; 对于 gpu-next 的简介&lt;/h2&gt;
 &lt;p&gt;总体上  &lt;code&gt;vo=gpu-next&lt;/code&gt;  是  &lt;code&gt;vo=gpu&lt;/code&gt;  的预览版本一样东西，最大的亮点是对 Dolby Vision 的部分支持，并且因为重构了许多关键算法性能表现会更好，具体的差异见项目主页 WIki 上的 &lt;a href=&#34;https://github.com/mpv-player/mpv/wiki/GPU-Next-vs-GPU&#34;&gt;GPU Next vs GPU&lt;br /&gt;
