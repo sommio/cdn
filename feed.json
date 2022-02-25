@@ -7,14 +7,6 @@
     "home_page_url": "https://sommio.moe",
     "items": [
         {
-            "id": "https://sommio.moe/2022/02/24/waifu2x-caffe/",
-            "url": "https://sommio.moe/2022/02/24/waifu2x-caffe/",
-            "title": "Waifu2x-Caffe CLI 版本参数简介",
-            "date_published": "2022-02-24T03:09:31.000Z",
-            "content_html": "<h3 id=\"-l-input_extention_list\"><a class=\"anchor\" href=\"#-l-input_extention_list\">#</a> -l , --input_extention_list</h3>\n<p>指定文件或文件夹</p>\n<h3 id=\"-t-tta-01\"><a class=\"anchor\" href=\"#-t-tta-01\">#</a> -t --tta &lt;0|1&gt;</h3>\n<p>默认为 0 ，当为 1 时启用 TTA（测试时数据增强），速度慢八倍但质量更好</p>\n<h3 id=\"-gpu\"><a class=\"anchor\" href=\"#-gpu\">#</a> --gpu</h3>\n<p>gpu 设备号，猜测是 xrandr --listproviders 输出中的 Provider</p>\n<h3 id=\"-b-batch_size\"><a class=\"anchor\" href=\"#-b-batch_size\">#</a> -b  --batch_size</h3>\n<p>似乎是机器学习相关的概念，看不懂所以不管（</p>\n",
-            "tags": []
-        },
-        {
             "id": "https://sommio.moe/2022/02/24/%E5%9C%A8ArchLinux%E4%B8%8A%E5%AE%89%E8%A3%85%E5%85%B7%E6%9C%89vo=gpu-next%E6%94%AF%E6%8C%81%E7%9A%84mpv/",
             "url": "https://sommio.moe/2022/02/24/%E5%9C%A8ArchLinux%E4%B8%8A%E5%AE%89%E8%A3%85%E5%85%B7%E6%9C%89vo=gpu-next%E6%94%AF%E6%8C%81%E7%9A%84mpv/",
             "title": "在 Arch Linux 上安装具有 vo=gpu-next 支持的 mpv",
